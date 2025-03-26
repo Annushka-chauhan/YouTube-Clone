@@ -1,0 +1,72 @@
+.subscribe-button {
+    background-color:rgb(202, 4, 4);
+    /* to change the color of text */
+    color: white;
+    border: none;
+    height: 36px;
+    width:105px;
+    /* to make rounded cornerrs */
+    border-radius: 2px;
+    /* to change the cursor to pointer */
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    /* to allign the text at a specific pos
+    rather by default the text is alligned line by line */
+    vertical-align: top;
+}
+.subscribe-button:hover{
+   opacity: 0.8;
+}
+/* when we click the color changes */
+.subscribe-button:active{
+    opacity: 0.3;
+    /* background-color: blue; */
+}
+
+.join-button{
+    background-color: white;
+    border-color: rgb(92, 173, 231);
+    /* to dont get shades of blue in border */
+    border-style: solid;
+    border-width: 1px;
+    color:rgb(92, 173, 231);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    transition: background-color 0.15s, 
+    color 0.15s;
+}
+.join-button:hover {
+    background-color:rgb(45, 136, 201);
+    color:white;
+}
+.join-button:active {
+    opacity: 0.7px;
+}
+.tweet-button{
+    background-color: rgb(2, 158, 222);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 18px;
+    /* to make the text inside buttin bold */
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    cursor: pointer;
+    margin-left:8px;
+    transition: box-shadow 0.5s;
+    vertical-align: top;
+    
+}
+.tweet-button:hover{
+      /* for shadow horiz. pos of shadow  ver pos. of shadow  blurr  color rgba is used */
+    box-shadow:  5px 5px 10px rgba( 0, 0, 0, 0.15) ;
+}

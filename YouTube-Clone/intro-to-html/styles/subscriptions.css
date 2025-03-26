@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #fff;
+}
+
+.header {
+    background-color: #202020;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subscriptions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subscription-item {
+    display: flex;
+    align-items: center;
+    width: calc(33.333% - 1rem);
+    background-color: #202020;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.channel-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.channel-info {
+    flex: 1;
+}
+
+.channel-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+
+.subscriber-count {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0.25rem 0 0;
+}
+
+/* Add loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subscription-item {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Loader styles */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181818;
+}
+
+.loader img {
+    width: 100px;
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Subscription item placeholders */
+.channel-logo {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adding subscriptions */
+.subscriptions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.subscription-item.striver {
+    background-image: url('https://yt3.googleusercontent.com/ytc/AL5GRJVU5FZbHFTZaJ6Q7q4HgM_tEZMZx_wrnqpK5BYi=s176-c-k-c0x00ffffff-no-rj');
+}
+
+.subscription-item.love-babbar {
+    background-image: url('https://yt3.googleusercontent.com/ytc/AL5GRJVF0fd9SPyQp5j_H5NdRWRlo5RgquF_1MwVu0rf=s176-c-k-c0x00ffffff-no-rj');
+}
+
+.subscription-item.code-with-harry {
+    background-image: url('https://yt3.googleusercontent.com/ytc/AL5GRJXpaSHflFWiQplJcmL-xd-b_E2ahUvJH_NPhH0A=s176-c-k-c0x00ffffff-no-rj');
+}
+
+.subscription-item.aman-dhattarwal {
+    background-image: url('https://yt3.googleusercontent.com/ytc/AL5GRJVJlLGLRm1JlIEoR9RddoQ17rKYtZBHz9V7IlVr=s176-c-k-c0x00ffffff-no-rj');
+}
+
+.subscription-item {
+    animation: fadeIn 0.3s;
+}
